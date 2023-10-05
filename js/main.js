@@ -489,6 +489,7 @@ for (let i = 0; i < mySmallBoxes.length; i++) {
 
     // case success
 
+    // Hello
     let cheackYes = 0;
     for (let m = 0; m < mySmallBoxesAnswers.length; m++) {
       if (cheackValue < 8 && mySmallBoxesAnswers[m].innerHTML != "") {
