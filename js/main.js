@@ -477,18 +477,21 @@ for (let i = 0; i < mySmallBoxes.length; i++) {
       }
     }
 
-    if (cheackValue == 7) {
+    if (!cheak) {
+      cheackValue++;
+    }
+
+    if (cheackValue == 8) {
       console.log("NOOOOOOOOOOoo");
 
       field.style.visibility = "visible";
-      let numberEnter = 10;
     }
 
     // case success
 
     let cheackYes = 0;
     for (let m = 0; m < mySmallBoxesAnswers.length; m++) {
-      if (cheackValue < 7 && mySmallBoxesAnswers[m].innerHTML != "") {
+      if (cheackValue < 8 && mySmallBoxesAnswers[m].innerHTML != "") {
         cheackYes++;
       }
     }
@@ -502,10 +505,6 @@ for (let i = 0; i < mySmallBoxes.length; i++) {
     }
 
     console.log(cheak);
-
-    if (!cheak) {
-      cheackValue++;
-    }
 
     // second loop
     // main_loop: for (let j = 0; j < word.length; j++) {}
